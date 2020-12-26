@@ -6,7 +6,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 
 day_names = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
 
-audio = sa.WaveObject.from_wave_file("a.wav")
+audio = sa.WaveObject.from_wave_file("alarm.wav")
 # Find mice by names
 mice_name = ["YICHIP Wireless Mouse", "MI Dongle MI Wireless Mouse"]
 mice_filenames = []
