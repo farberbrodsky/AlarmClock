@@ -118,7 +118,7 @@ wake_up_data = None
 play_obj = None
 
 def alarm_time(now, alarm_data):
-    # { "hour": 8, "minute": 0 } will return the timestamp of it today
+    # { "hour": 8, "minutes": 0 } will return the timestamp of it today
     return datetime(now.year,
              now.month,
              now.day,
@@ -127,7 +127,7 @@ def alarm_time(now, alarm_data):
     )
 
 def say(message):
-    subprocess.run(["spd-say", json.dumps(message)])
+    subprocess.Popen(["espeak", json.dumps(message)])
 
 while True:
     while True:
